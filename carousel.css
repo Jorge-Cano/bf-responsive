@@ -2,11 +2,19 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
+  body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
   }
+
+  /* .carousel h1 {
+      font-size: 48px !important;
+  }
+
+  .carousel p {
+      font-size: 24px !important;
+  } */
   
   
   /* CUSTOMIZE THE CAROUSEL
@@ -93,7 +101,7 @@ body {
     }
   }
 
-.carousel-caption{
-  background: rgba(50,50,50,.3);
-  padding: 20px;
-}
+  .carousel-caption{
+    background: rgba(50,50,50,.3);
+    padding: 20px;
+  }
