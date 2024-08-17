@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Borodino </title>
+    <title>Borodino</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
 
@@ -17,209 +16,195 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Offset for fixed navbar */
+      body {
+        padding-top: 56px; /* Adjust based on navbar height */
+      }
+
+      h2 {
+        color: #ff4447;
+      }
+
+      section {
+        padding-top: 56px; /* Adjust based on navbar height */
+        margin-top: -56px; /* Adjust based on navbar height */
+      }
+
+      /* Color Theme Overrides */
+      body {
+        background-color: #0d293a; /* Dark Blue */
+        color: #f0eff0; /* Light Gray */
+      }
+
+      .navbar {
+        background-color: #0d293a; /* Teal */
+        color: #f0eff0; /* Light Gray */
+      }
+
+      .navbar .nav-link {
+        color: #f0eff0; /* Light Gray */
+        font-weight: normal;
+      }
+
+      .navbar .nav-link:hover {
+        color: #f0eff0; /* Light Gray */
+        text-decoration: underline;
+      }
+
+      .carousel-caption.text-left {
+        color: #f0eff0; /* Light Gray */
+      }
+
+      .featurette-heading {
+        color: #ff4447; /* Red */
+      }
+
+      .lead {
+        color: #71a7a6; /* Light Teal */
+      }
+
+      a {
+        color: #257985; /* Teal */
+      }
+
+      a:hover {
+        color: #ff4447; /* Red */
+      }
+
+      .footer {
+        background-color: #0d293a; /* Dark Blue */
+        color: #f0eff0; /* Light Gray */
+      }
+    </style>
   </head>
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Borodino Consulting</a>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <a class="navbar-brand" href="#" style="color: #f0eff0;">Borodino Consulting</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" style="color: #f0eff0;"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home" style="color: #f0eff0;">Home</a>
             </li>
-            <li class="nav-item mr-auto">
-              <a class="nav-link" href="#">Consulting Services</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#consulting-services" style="color: #f0eff0;">Consulting Services</a>
             </li>
-            <li class="nav-item mr-auto">
-              <a class="nav-link" href="#">Major League Baseball</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#major-league-baseball" style="color: #f0eff0;">Major League Baseball</a>
             </li>
-            <li class="nav-item mr-auto">
-              <a class="nav-link" href="#">Contact Me</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me" style="color: #f0eff0;">Contact Me</a>
             </li>
           </ul>
-          <!-- <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
         </div>
       </nav>
     </header>
 
     <main role="main">
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol> -->
+      <div id="home" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="first-slide" src="austin.png" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-left">
-                <!-- <br> -->
                 <h1>Derrik Fox</h1>
                 <br>
-                <p>Tenured sales leader offering a personalized sales strategy, hands on consulting, training, and testing. 
+                <p>Tenured sales leader offering a personalized sales strategy, hands-on consulting, training, and testing. 
                 <br>
                 I'll spend time with you researching and understanding your business then build a solution towards your goals.
                 </p>
-                <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
               </div>
             </div>
           </div>
-          <!-- <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Sales Strategist</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>The Craft of Selling</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </div>
-            </div>
-          </div> -->
         </div>
-        <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a> -->
       </div>
-
-
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
 
       <div class="container marketing">
 
-        <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
             <img class="rounded-circle" src="dk.png" alt="Generic placeholder image" width="140" height="140">
-            <!-- <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"> -->
             <h2>About Me</h2>
-            <p>I am recognized as a high-performing, hard-charging Sales Executive, recognized as growth engine for organizations including FinTech and technology-driven companies. I identify opportunities for growth, penetrate new markets, and build long-standing, trusted relationships with key decision makers including C-Suite leaders.
-            </p>
-            <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
-          </div><!-- /.col-lg-4 -->
+            <p>I am recognized as a high-performing, hard-charging Sales Executive, recognized as growth engine for organizations including FinTech and technology-driven companies. I identify opportunities for growth, penetrate new markets, and build long-standing, trusted relationships with key decision makers including C-Suite leaders.</p>
+          </div>
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="network.jpg" alt="Generic placeholder image" width="140" height="140">
             <h2>Proven Track Record</h2>
-            <p>Award-Winning Sales Leader: 
+            <p>Award-Winning Sales Leader:
             <br>- Delivered significant sales achievements throughout career
             <br>- Earned President’s Club honors multiple times
-            <br>- Attaining up to 220% of sales goals, and several top ranked sales performances
-            </p>
-            <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
-          </div><!-- /.col-lg-4 -->
+            <br>- Attaining up to 220% of sales goals, and several top ranked sales performances</p>
+          </div>
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Unique Sales Aproach</h2>
+            <img class="rounded-circle" src="approach.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Unique Sales Approach</h2>
             <p>I develop and execute comprehensive sales and revenue-generating strategies to attain sustainable YoY sales growth. I foster a culture of high-performance, excellence, and collaboration and capitalize on emerging market trends and penetrate new segments and verticals.</p>
-            <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
-
-        <!-- <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div> -->
+        </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div id="consulting-services" class="row featurette align-items-end">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Consulting Services <span class="text-muted"><br>See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Consulting Services <span class="text-muted"><br>Reach out for a preliminary conversation.</span></h2>
+            <p class="lead">I'm confident that we can bring you one to two steps closer if we can identify your primary struggles and paint points in our first handful of conversations.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto align-self-end" src="consulting.png" alt="Conversation">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div id="major-league-baseball" class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Effort to bring Major League Baseball to Austin <span class="text-muted"></span></h2>
-            <p class="lead">Derrik Fox and Borodino Consulting are active in concerted efforts to bring major league baseball to Austin by 2029. To learn more about this initiative go to <a href="https://atxmlb.com">atxmlb.com</a> </p>
+            <p class="lead">Derrik Fox and Borodino Consulting are active in concerted efforts to bring major league baseball to Austin by 2029. To learn more about this initiative go to <a href="https://atxmlb.com">atxmlb.com</a></p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="mlb.jpg" alt="MLB" >
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <div class="col-md-7">
+        <div id="contact-me" class="row featurette">
+          <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">Contact Me <span class="text-muted"></span></h2>
-            <p class="lead">Let's walk through your company use case together and see where I can add perspective and ideas for solutions.</p>
+            <p class="lead">You can reach me at derrikfox@gmail.com</p>
           </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="contact.jpg" alt="Contact" >
           </div>
         </div>
 
         <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
 
       </div><!-- /.container -->
 
-
       <!-- FOOTER -->
-      <footer class="container">
+      <footer class="footer container">
         <p class="float-right"><a href="#">Back to top</a></p>
         <p>2024 Borodino Fox</p>
       </footer>
     </main>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="slim.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="slim.js" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="slim.js"><\/script>')</script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="holder.min.js"></script>
   </body>
 </html>
