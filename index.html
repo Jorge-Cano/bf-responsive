@@ -86,6 +86,20 @@
         color: #f0eff0; /* Light Gray */
       }
     </style>
+    <script>
+      (function(name,path,ctx){ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}})
+      ('KeenTracking', 'https://cdn.jsdelivr.net/npm/keen-tracking@4/dist/keen-tracking.min.js', this);
+    
+      KeenTracking.ready(function(){
+        const client = new KeenTracking({
+          projectId: '66c16fa840af146c8b6199ef',
+          writeKey: 'e3164811a8c36cfc75e7967d04d62b3d6cc9e49c8281d6a06d8ae847a83c25b5886237a023d143c89465c346cdaca1a5f73a394edfb64b1c6deec362efe7494a7949fa04088d8a67cc9bfa1502fe35c193a21873667bc1c8b003544dd9b6cf0f'
+        });
+    
+        // Record events automatically
+        client.initAutoTracking();
+      });
+    </script>
   </head>
   <body>
 
